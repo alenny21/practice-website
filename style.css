@@ -101,7 +101,7 @@ a:hover {
 }
 
 .categories li {
-  background: url("../images/flower-pic.png") no-repeat left center;
+  background: url("flower-pic.png") no-repeat left center;
   background-size: 16px 16px;
   padding-left: 30px; /* space for image */
   margin-bottom: 10px;
@@ -174,7 +174,7 @@ a:hover {
   width: 68%;
   padding: 15px;
   color: #731414;
-  background-image: url(../premium_photo-1674728198545-8fa4796b9297.avif);
+  background-image: url(premium.avif);
   border-radius: 8px;
   margin-top: 20px;
 }
@@ -183,7 +183,7 @@ a:hover {
   float: right;
   width: 28%;
   padding: 15px;
-  background-image: url(../premium_photo-1674728198545-8fa4796b9297.avif);
+  background-image: url(premium.avif);
   color: #b60b0b;
   text-align: center;
   border-radius: 10px;
@@ -200,7 +200,7 @@ a:hover {
   background-color: #fff;
   color: #b60b0b;
   border-radius: 10px;
-  background-image: url(../premium_photo-1674728198545-8fa4796b9297.avif);
+  background-image: url(premium.avif);
 }
 
 .p-box h1 {
