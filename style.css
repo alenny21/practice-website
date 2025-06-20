@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f23f3f; /* Lighter red background */
+  background-color: #f23f3f;
   color: #ffffff;
   font-size: 16px;
   line-height: 1.6;
@@ -67,6 +67,7 @@ a:hover {
   text-decoration: underline;
   margin-bottom: 10px;
 }
+
 .box-2 .button {
   margin-top: 10px;
   display: inline-block;
@@ -94,23 +95,24 @@ a:hover {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .categories ul {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
   padding-left: 0;
   margin-left: 0;
 }
 
 .categories li {
-  background: url("flower-pic.png") no-repeat left center;
+  background: url("flower pic.jpg") no-repeat left center;
   background-size: 16px 16px;
-  padding-left: 30px; /* space for image */
+  padding-left: 30px;
   margin-bottom: 10px;
   border-bottom: 1px dotted #d90000;
   padding-bottom: 5px;
 }
 
 .categories li a {
-  color: #b60b0b; /* Red text for category links */
+  color: #b60b0b;
   font-weight: bold;
   text-decoration: none;
 }
@@ -139,7 +141,7 @@ a:hover {
   border-radius: 5px;
 }
 
-/* FLOATED BLOCKS (3-column layout) */
+/* FLOATED BLOCKS */
 .block {
   float: left;
   width: 32%;
@@ -152,9 +154,9 @@ a:hover {
   box-sizing: border-box;
 }
 
-/* Remove margin on last block to avoid overflow */
+/* Remove margin on last block */
 .block:nth-child(3n) {
-  margin-right: 1%;
+  margin-right: 0;
 }
 
 .block h3 {
@@ -190,7 +192,7 @@ a:hover {
   margin-top: 20px;
 }
 
-/* CENTERED POSITIONED BOX */
+/* CENTERED BOX */
 .p-box {
   width: 400px;
   height: 250px;
@@ -223,8 +225,22 @@ a:hover {
   z-index: 999;
 }
 
+/* LIST STYLING */
+.my-list li:nth-child(odd) {
+  background: red;
+}
 
-.my-list li:nth-child(odd){
-background: red;
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .block,
+  #main-block,
+  #sidebar {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
 
+  .p-box {
+    width: 90%;
+  }
 }
